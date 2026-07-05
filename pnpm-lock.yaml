@@ -211,6 +211,9 @@ importers:
         specifier: ^0.2.8
         version: 0.2.8
     devDependencies:
+      '@types/node':
+        specifier: ^26.1.0
+        version: 26.1.0
       tsx:
         specifier: ^4.23.0
         version: 4.23.0
@@ -376,6 +379,9 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@types/node@26.1.0':
+    resolution: {integrity: sha512-O0A1G3xPGy4w7AgQdAQYUlQ+BKk2Oovw8eRpofyp5KdBZULnbe+WqaOVNrm705SHphCiG4XHsACrSmPu1f+Kgw==}
+
   di-wise@0.2.8:
     resolution: {integrity: sha512-qFAbi4jFfNX4xTj7Hd/7OhpZpI4nvDJW6H73FoUYhGo89NUWtd50Hq8t6G9eYf/TKTrXS5q6xy/mBScZrnI0tQ==}
 
@@ -398,6 +404,9 @@ packages:
     resolution: {integrity: sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw==}
     engines: {node: '>=14.17'}
     hasBin: true
+
+  undici-types@8.3.0:
+    resolution: {integrity: sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ==}
 
 snapshots:
 
@@ -479,6 +488,10 @@ snapshots:
   '@esbuild/win32-x64@0.28.1':
     optional: true
 
+  '@types/node@26.1.0':
+    dependencies:
+      undici-types: 8.3.0
+
   di-wise@0.2.8: {}
 
   esbuild@0.28.1:
@@ -520,3 +533,5 @@ snapshots:
       fsevents: 2.3.3
 
   typescript@6.0.3: {}
+
+  undici-types@8.3.0: {}
